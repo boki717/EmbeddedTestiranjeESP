@@ -1,0 +1,30 @@
+Faza 1. -gotovo
+sta je zapravo freeRTOS
+nauci kako embedded projekti funkcionisu
+
+nauci sta je proces, thread
+nauci sta je task, prekid, tajmer i kako rade i kako se implementiraju
+nauci GPIO
+------------------------------------------------------------------------------------------------------
+Faza 2.
+nauci da stavljas stvari u vise fajlova
+nauci sta je semafor, mutex, mailbox
+nauci sta je event group, notifications
+nauci ADC, PWM
+------------------------------------------------------------------------------------------------------
+
+kako se preko queue-a podaci razmenjuju izmedju taskova i da li queue ima jos neku ulogu
+za sve ovo nauci i kako radi i kako se implementira
+
+nauci DMA, UART, CAN (kad nam treba MCP2551 can transiver a kad ne?), SPI, I2C
+nauci WI-FI, Bluetooth, ESP-NOW
+
+Smisliti brzi projekat za primenu svega naucenog
+Faza 1. -gotovo
+-Napravi projekat sa razumevanjem
+-Namesti da se na tajmer (koji si sam podesio igrajuci se sa clock-om)
+-Pokrece interupt koji (ako je moguce) namesta neku flag promenljivu na 1
+-Pa se u jednom Tasku koji je na pocetku pokrenut iz main-a u while(1) ako je ova flag promenljiva 1
+-Obrce da li je neki GPIO ukljucen ili nije i vraca se flag promenljiva na 0
+-Postoji (ako je moguce) drugi interupt koji (nekako) reaguje na dugme kad predje iz ne pritisnutog u
+pritisnuto stanje i takodje stavlja flag promenljivu na 1
